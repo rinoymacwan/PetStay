@@ -5,13 +5,22 @@ ul {
   }
 
   #burger{
+    margin-top: 5px;;
     text-align: left;
-    background-color: lightblue;
-  }
-  #mobileBanner{
-    background-color: lawngreen;
+    background-color: rgba(196,198,159,255);
   }
 
-  li{
-    background-color: lightcoral;
+  img {
+    width: 100%;
+    float: left;
+    clear: both;
+  }
+  .navbar{
+    background-color:rgb(195,196,157);  
+  }
+  .deskNav{
+    font-size: 32px;
+  }
+  .mobNav{
+    background-color: rgba(196,198,159,255);
   }
