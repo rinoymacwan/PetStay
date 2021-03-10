@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'hamburgers/dist/hamburgers.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 
 body{
-    background-color: rgba(191,222,206,255)
+    background-color: rgba(191,222,206,255);
+    overflow-x: hidden; 
+  }
+  html{
+    overflow-x: hidden;
   }

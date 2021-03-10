@@ -10,21 +10,30 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AmenitiesComponent } from './amenities/amenities.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HamburgerToggleDirective,
     HomeComponent,
     ServicesComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    HamburgerToggleDirective,
+    AmenitiesComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAk4hEOmQEk26cFAe7wcsAPLHlw4mLqx5s'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
