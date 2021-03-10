@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PetStay';
+  @ViewChild('ham') Ham: ElementRef;
+
+  public isMenuCollapsed = true;
+  navbarOpen = false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
+
+  clickHam()
+  {
+    this.Ham.nativeElement.click();
+  }
 }

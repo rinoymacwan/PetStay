@@ -1,0 +1,3 @@
+jonsuh hamburgers
+ng bootstrap
+flex layout for hiding menus and stuff
