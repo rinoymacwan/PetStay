@@ -4,7 +4,9 @@ ul {
     padding: 0;
     /*overlap issues position: absolute;*/
   }
-
+li{
+  z-index: 1;
+}
   #burger{
     margin-top: 5px;;
     text-align: left;
@@ -36,10 +38,15 @@ ul {
   }
   #mobileBanner{
     margin-left: -50px;
+    z-index: -0;
   }
-
+  .wrapper {background:transparent url('/assets/images/logo.png') no-repeat center center;
+    height: inherit;
+    object-fit: contain;
+  }
   footer {
     background: #061D25;
+    color: chartreuse;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -63,7 +70,9 @@ ul {
     color: white;
   }
 
-
   .mobNavList{
     margin-left: 15%;
   }
+.foot{
+  height: 50px;
+}

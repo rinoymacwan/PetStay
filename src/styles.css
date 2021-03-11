@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'hamburgers/dist/hamburgers.css';
-@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
 
 body{
     background-color: rgba(191,222,206,255);
