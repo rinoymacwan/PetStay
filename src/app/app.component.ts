@@ -19,4 +19,12 @@ export class AppComponent {
   {
     this.Ham.nativeElement.click();
   }
+  closeHam()
+  {
+    if(this.isMenuCollapsed==false)
+    {
+      this.Ham.nativeElement.click();
+    }
+    
+  }
 }

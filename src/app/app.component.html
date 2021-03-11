@@ -1,7 +1,7 @@
 
 <div class="container">
   <div class="row mobNav navbar-light">
-    <div fxShow="true" fxHide.gt-xs="true" class="col-4">
+    <div fxShow="true" fxHide.gt-xs="true" class="col-4 mobnavInner">
       
       <button id="burger" class="hamburger hamburger--minus" #ham type="button" (click)="isMenuCollapsed = !isMenuCollapsed"
       appHamburgerToggle>
@@ -12,7 +12,7 @@
       </button>
 
     <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav mobNavList">
         <li class="nav-item">
           <!-- Step 4: Close the menu when a link is clicked. -->
           <a class="nav-link" [routerLink]="['/home']" (click)="clickHam()">Home</a>
@@ -28,8 +28,10 @@
     </div>
 
     <div id="mobileBanner" class="col-8" fxShow="true" fxHide.gt-xs="true">
-      <img src="assets/images/logo.png" class="logo" alt="image">
-    </div>
+      <a [routerLink]="['/home']" (click)="closeHam()">
+        <img src="assets/images/logo.png" class="logo" alt="image">
+      </a>
+      </div>
   </div>
 </div>
 
@@ -65,9 +67,8 @@
 <footer>
   <div>
 
-    <a href="#"><i class="fa fa-facebook"></i></a>
-    <a href="#"><i class="fa fa-instagram"></i></a>
-    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="//www.facebook.com/Joels-Pet-Stay-101413485309104/"><i class="fa fa-facebook"></i></a>
+    <a href="//www.instagram.com/joelspetstay"><i class="fa fa-instagram"></i></a>
   </div>
   
 </footer>
