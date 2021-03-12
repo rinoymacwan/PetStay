@@ -15,16 +15,14 @@ li{
 .hamburger-box{
   height: 100%;
   padding: 5px;
- 
+
+}
+.hamburger-inner{
 }
 .mobnavInner{
   
 }
-  .logo {
-    width: 100%;
-    float: left;
-    clear: both;
-  }
+
   .navbar{
     background-color:rgb(195,196,157);
   }
@@ -34,6 +32,7 @@ li{
   }
   .mobNav{
     background-color: rgba(196,198,159,255);
+
     
   }
   #mobileBanner{
@@ -75,4 +74,18 @@ li{
   }
 .foot{
   height: 50px;
+}
+
+
+.logo {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.hamDiv{
+  margin: auto;
+  z-index: +1;
+
 }

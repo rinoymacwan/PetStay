@@ -1,4 +1,8 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +11,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class AppComponent {
   title = 'PetStay';
+  faFacebookF = faFacebookF;
+  faInstagram = faInstagram;
+  faWhatsapp = faWhatsapp;
+
   @ViewChild('ham') Ham: ElementRef;
 
   public isMenuCollapsed = true;
