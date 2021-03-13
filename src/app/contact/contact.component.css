@@ -32,4 +32,5 @@ img{
 }
 a{
  color: rgb(40, 91, 167);   
+ text-decoration-line: underline;
 }
