@@ -10,7 +10,7 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PetStay';
+  title = 'Joel\'s Pet Stay';
   faFacebookF = faFacebookF;
   faInstagram = faInstagram;
   faWhatsapp = faWhatsapp;
