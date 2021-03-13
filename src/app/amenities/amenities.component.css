@@ -7,4 +7,60 @@ table{
 }
 td{
     padding: 5px;
+    border:none;
 }
+tr{
+    padding: 5px;
+    border:none;
+}
+ul{
+    list-style-type: disc;
+  }
+
+.serv{
+    border-style: ridge;
+    border-width: 1px;
+}
+.serv td{
+    border-style: solid;
+    border-width: 1px;
+}
+.amen{
+    border: none;
+}
+@media screen and (min-width: 601px) {
+
+
+    .amen{
+        margin-left: 5%;
+
+
+  }
+
+  .serv{
+    margin-left: 5%;
+
+
+}
+}
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+
+    .amen{
+        height: 100%;
+        /* The height is 400 pixels */
+        width: 80%;
+        margin:auto;
+
+    }
+    .serv{
+        height: 100%;
+        /* The height is 400 pixels */
+        width: 80%;
+        margin:auto;
+    
+    
+    }
+
+    
+  }

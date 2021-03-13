@@ -1,26 +1,73 @@
 .intro{
   text-align: justify;
   font-size: small;
+  margin: auto;
 }
 
 
+#carouselExampleCaptions{
+  height: 100%;
+  width: 100%;
+  max-width: 900px;
+  margin:auto;
+
+}
 
 
 @media (min-width: 544px) {  
-  .intro {font-size:1.5rem;} /*1rem = 16px*/
+  .intro {font-size:1rem;} /*1rem = 16px*/
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  
-  .intro {font-size:2rem;} /*1rem = 16px*/
+  .intro {font-size:1.5rem;} /*1rem = 16px*/
 }
  
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  .intro {font-size:2.5rem;} /*1rem = 16px*/
+  .intro {font-size:1.5rem;} /*1rem = 16px*/
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
-  .intro {font-size:3rem;} /*1rem = 16px*/    
+  .intro {font-size:2rem;} /*1rem = 16px*/    
+}
+
+#custCarousel{
+  border-style: dotted;
+  border-width: 2px;
+  height: 100%;
+  width: 100%;
+  margin:auto;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%
+}
+
+#custCarousel .carousel-indicators {
+  position: static;
+  margin-top: 20px
+}
+
+#custCarousel .carousel-indicators>li {
+  width: 100px
+}
+
+#custCarousel .carousel-indicators li img {
+  display: block;
+  opacity: 0.5
+}
+
+#custCarousel .carousel-indicators li.active img {
+  opacity: 1
+}
+
+#custCarousel .carousel-indicators li:hover img {
+  opacity: 0.75
+}
+
+.carousel-item img {
+  width: 80%
 }

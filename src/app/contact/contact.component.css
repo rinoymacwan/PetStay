@@ -1,31 +1,10 @@
-#map {
-    height: 100%;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-    margin-bottom: 20px;
-}
-p{
-    margin-left: 5%;
-    font-size: 20px;
-}
-table{
-    margin-left: 5%;
-}
+
+
 .address{
     align-content: left;
 }
 td{
     padding: 5px;;
-}
-img{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  border-style: ridge;
-  border-width: 2px;
-  border-color: black;
 }
 #mapText{
     font-size: 18px;
@@ -34,3 +13,69 @@ a{
  color: rgb(40, 91, 167);   
  text-decoration-line: underline;
 }
+
+@media screen and (min-width: 601px) {
+    img{
+        display: block;
+      margin-right: auto;
+      width: 80%;
+      border-style: ridge;
+      border-width: 2px;
+      border-color: black;
+    }
+    #map {
+        height: 100%;
+        /* The height is 400 pixels */
+        width: 100%;
+        max-width: 600px;
+        /* The width is the width of the web page */
+        margin-bottom: 20px;
+
+        margin-left: 5%;
+    
+    }
+    table{
+        margin-left: 5%;
+        border-style: ridge;
+        border-width: 2px;
+    }
+    p{
+        margin-left: 5%;
+        font-size: 20px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    img{
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      border-style: ridge;
+      border-width: 2px;
+      border-color: black;
+    }
+    #map {
+        height: 100%;
+        /* The height is 400 pixels */
+        width: 100%;
+        max-width: 600px;
+        /* The width is the width of the web page */
+        margin-bottom: 20px;
+    
+    }
+    table{
+        height: 100%;
+        /* The height is 400 pixels */
+        width: 80%;
+        margin:auto;
+        border-style: ridge;
+        border-width: 2px;
+    }
+    p{
+        margin: 5%;
+        font-size: 20px;
+    }
+    
+  }
