@@ -59,6 +59,8 @@
 </nav>
 </div> -->
 
+
+
 <nav class="navbar navbar-expand-lg navbar-light ">
   <div class ="row">
 
@@ -80,6 +82,9 @@
         <a class="nav-link" [routerLink]="['/amenities']" data-toggle="collapse" data-target="#navbarTogglerDemo02">Amenities</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/testimonials']" data-toggle="collapse" data-target="#navbarTogglerDemo02">Testimonials</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" [routerLink]="['/contact']" data-toggle="collapse" data-target="#navbarTogglerDemo02">Contact Us</a>
       </li>
     </ul>
@@ -87,9 +92,13 @@
 </nav>
 
 
-<router-outlet>
+<div class="row mainContent">
+<div class="child">
+  <router-outlet>
   
-</router-outlet>
+  </router-outlet>
+</div>
+</div>
 
 
 <footer>
@@ -103,9 +112,9 @@
 
     </div>
    
-    <!-- <a href="//www.facebook.com/Joels-Pet-Stay-101413485309104/">FB</a>
-    <a href="//www.instagram.com/joelspetstay">Insta</a>
-    <a href="https://wa.me/919510866759">WA</a> -->
+
   </div>
   
 </footer>
+
+

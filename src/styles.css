@@ -4,9 +4,11 @@
 body{
     background-color: rgba(191,222,206,255);
     overflow-x: hidden; 
-    margin-bottom:50px;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+}
 
-  }
   html{
     overflow-x: hidden;
-  }
+}

@@ -4,41 +4,15 @@ ul {
     padding: 0;
     /*overlap issues position: absolute;*/
   }
+
 li{
   z-index: 1;
-}
-  #burger{
-    margin-top: 5px;;
-    text-align: left;
-    background-color: rgba(196,198,159,255);
-  }
-.hamburger-box{
-  height: 100%;
-  padding: 5px;
-
-}
-.hamburger-inner{
-}
-.mobnavInner{
-  
 }
 
   .navbar{
     background-color:rgb(195,196,157);
   }
-  .deskNav{
-    font-size: 32px;
-    
-  }
-  .mobNav{
-    background-color: rgba(196,198,159,255);
 
-    
-  }
-  #mobileBanner{
-    margin-left: -50px;
-    z-index: -0;
-  }
   .wrapper {background:transparent url('/assets/images/logo.png') no-repeat center center;
     height: inherit;
     object-fit: contain;
@@ -54,6 +28,7 @@ li{
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
+    border: 3px solid green;
 }
   footer a {
     color: #70726F;
@@ -95,11 +70,62 @@ li{
   li {
     font-size: 2vw;
   }
+  /* .mainContent{
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid green;
+
+  } */
+
+  .mainContent{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border: 3px solid red;
+
+    flex: 1 1 auto;
+    flex-flow: column;
+    height: 100%;
+
+  }
+  .child{
+    text-align: left;
+    justify-content: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    border: 3px solid green;
+    width: 60%;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   li {
     font-size: 5vw;
+  }
+    .mainContent{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    border: 3px solid red;
+
+    flex: 1 1 auto;
+    flex-flow: column;
+    height: 100%;
+
+  }
+  .child{
+    text-align: left;
+    justify-content: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+    border: 3px solid green;
+    width: 95%;
   }
 }
